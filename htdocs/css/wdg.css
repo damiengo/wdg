@@ -1,3 +1,7 @@
+html, body {
+  position: relative;
+}
+
 h1, h2 {
   font-family: 'Playball', cursive;
 }
@@ -25,7 +29,8 @@ header {
 }
 
 .block {
-  height: 700px;
+  height: 100%;
+  min-height: 100%;
 }
 
 #index {
