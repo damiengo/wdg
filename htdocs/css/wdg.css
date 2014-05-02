@@ -1,3 +1,8 @@
+@font-face {
+  font-family: alex-brush;
+  src: url("../font/alexbrush-regular.ttf");
+}
+
 html, body {
   position: relative;
   width: 100%;
@@ -5,7 +10,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playball', cursive;
+  font-family: alex-brush, cursive;
+  font-weight: bold;
   text-align: center;
 }
 
