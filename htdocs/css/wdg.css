@@ -4,7 +4,7 @@ html, body {
   height: 100%;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Playball', cursive;
   text-align: center;
 }
@@ -45,4 +45,8 @@ header {
   -moz-background-size: cover; /* pour Firefox */
   -o-background-size: cover; /* pour Opera */
   background-size: cover; /* version standardisée */
+}
+
+#reponse {
+  margin-bottom: 3%;
 }
