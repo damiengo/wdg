@@ -18,3 +18,22 @@ $(function() {
 
 /* Wow initializing */
 new WOW().init();
+
+/* Sending response */
+$("#submitForm").click(function() {
+    $.post("api.php/response", 
+           {
+              "name":    $("#name").val(), 
+              "email":   $("#email").val(), 
+              "message": $("#response").val()
+           }, 
+           function(response) {
+               console.log(response);
+               if(response.success) {
+
+               }
+           }
+    );
+
+    return false;
+});
