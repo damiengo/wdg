@@ -117,23 +117,23 @@
               Vous pouvez &eacute;galement remplir le formulaire suivant pour nous r&eacute;pondre directement.
             </p>
           </div>
-          <form action="" method="post" class="form-horizontal" role="form">
+          <form action="" method="post" class="form-horizontal" role="form"  data-toggle="validator">
             <div class="form-group">
               <label for="name" class="col-sm-2 control-label">Votre nom</label>
               <div class="col-sm-10">
-                <input type="text" name="name" id="name" class="form-control" />
+                <input type="text" name="name" id="name" class="form-control" required />
               </div>
             </div>
             <div class="form-group">
               <label for="email" class="col-sm-2 control-label">Votre email</label>
               <div class="col-sm-10">
-                <input type="text" name="email" id="email" class="form-control" />
+                <input type="text" name="email" id="email" class="form-control" type="email" required />
               </div>
             </div>
             <div class="form-group">
               <label for="response" class="col-sm-2 control-label">Votre r&eacute;ponse</label>
               <div class="col-sm-10">
-                <textarea id="response" class="form-control" rows="6"></textarea>
+                <textarea id="response" class="form-control" rows="6" required></textarea>
               </div>
             </div>
             <div class="form-group">
@@ -149,6 +149,7 @@
 
     <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/wdg.js"></script>
   </body>
