@@ -11,6 +11,14 @@ $app = new Silex\Application();
 /** Mail sender **/
 $app->register(new Silex\Provider\SwiftmailerServiceProvider());
 
+/** Mailer options **/
+$app["swiftmailer.options"] = array(
+    "host"       => "smtp1.dc0.gpaas.net",
+    "port"       => "25",
+    "encryption" => null,
+    "auth_mode"  => null
+);
+
 /** Send response **/
 $app->post("/response", function(Request $request) use ($app) {
     $name  = $request->get("name", "");
