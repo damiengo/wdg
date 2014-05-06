@@ -1,23 +1,11 @@
 <?php
-require_once __DIR__.'/../vendor/autoload.php';
+header("Cache-Control: max-age=1");
 
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\ParameterBag;
+$name  = $_POST["name"];
+$email = $_POST["email"];
+$text  = $_POST["message"];
 
-/** App **/
-$app = new Silex\Application();
-
-/** Send response **/
-$app->post("/response", function(Request $request) use ($app) {
-    header("Cache-Control: max-age=1");
-
-    $name  = $request->get("name", "");
-    $email = $request->get("email", "");
-    $text  = $request->get("message", "");
-
-    mail("dam.gou@gmail.com", "Reponse de [Nom: ".$name."][Email: ".$email."]", $text);
-
-    return $app->json(["success" => true], 200);
-});
+$fp = fopen("../responses/".date("Ymd-His-u").".txt", "w");
+fwrite($fp, "name: [".$name."]\nemail: [".$email."]\nmessage: [".$text."]");
+fclose($fp);
 
