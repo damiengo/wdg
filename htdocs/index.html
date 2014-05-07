@@ -1,158 +1,22 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Le grand jour...</title>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/wdg.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Le grand jour arrive...</title>
+    <style>
+
+      p {
+        text-align: center;
+        font-family: Arial;
+        font-style: italic;
+        margin-top: 150px;
+      }
+
+    </style>
   </head>
   <body>
-
-    <header id="top">
-      <div class="container">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav nav-justified">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <!--<li><a href="#les_maries">Les mari&eacute;s</a></li>
-                <li><a href="#les_temoins">Les t&eacute;moins</a></li>-->
-                <li><a href="#programme">Programme</a></li>
-                <li><a href="#top" class="heart"><img src="img/blue_heart.jpg" /></a></li>
-                <li><a href="#reponse">R&eacute;ponse</a></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-      </div>
-    </header>
-
-    <section class="block" id="index">
-      <h1 id="accueil" class="wow bounceInLeft">Pam&eacute;la & Damien</h1>
-      <h1 id="accueil" class="wow bounceInRight">se marient</h1>
-      <h1 id="accueil" class="wow bounceInLeft">le 20 septembre 2014</h1>
-    </section>
-
-    <!--
-    <section class="block">
-      <h1 id="les_maries" class="wow fadeInUp">Les mari&eacute;s</h1>
-    </section>
-
-    <section class="block">
-      <h1 id="les_temoins">Les t&eacute;moins</h1>
-    </section>
-    -->
-
-    <section class="block" id="programme">
-      <h1>Programme</h1>
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-3 wow bounceInLeft">
-          <h3>C&eacute;r&eacute;monie civile</h3>
-          <p>
-            &Agrave; partir de 09h15 &agrave; la mairie de Guichen
-            <address>
-              Place Georges le Cornec<br />
-              35580 Guichen
-            </address>
-          </p>
-          <h3>C&eacute;r&eacute;monie religieuse</h3>
-          <p>
-            &Agrave; partir de 10h00 &agrave; l'&eacute;glise Saint Martin de Guichen
-          </p>
-          <h3>Vin d'honneur</h3>
-          <p>
-            Retrouvons-nous &agrave; la salle polyvalente de Bovel pour le vin d'honneur &agrave; 12h00.
-            <address>
-              Le bourg
-              35330 Bovel
-            </address>
-          </p>
-        </div>
-        <div class="col-md-3 wow bounceInRight">
-          <h3>Repas</h3>
-          <p>
-            &Agrave; la suite du vin d'honneur, un repas sera servi &agrave; la salle polyvalente de Bovel.
-          </p>
-          <h3>Cocktail</h3>
-          <p>
-            Apr&egrave;s un moment de d&eacute;tente, d&eacute;gustons le cocktail dinatoire.
-          </p>
-          <h3>Soir&eacute;e dansante</h3>
-          <p>
-            Pour bien terminer cette journ&eacute;e, d&eacute;foulons-nous sur la piste!
-          </p>
-        </div>
-        <div class="col-md-3"></div>
-      </div>
-    </section>
-
-    <section id="reponse" class="block container wow fadeInLeft">
-      <h1>R&eacute;ponse</h1>
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <div class="col-sm-offset-2 col-sm-10">
-            <p>
-              Vous pouvez nous rendre r&eacute;ponse avant le 20 juillet par t&eacute;l&eacute;phone au <strong>06 64 72 55 08</strong> ou au <strong>06 98 80 55 41</strong>.
-            </p>
-            <p>
-              Vous pouvez &eacute;galement remplir le formulaire suivant pour nous r&eacute;pondre directement.
-            </p>
-          </div>
-          <form action="" method="post" class="form-horizontal" role="form" id="responseForm" data-toggle="validator">
-            <div class="form-group">
-              <label for="name" class="col-sm-2 control-label">Votre nom</label>
-              <div class="col-sm-10">
-                <input type="text" name="name" id="name" class="form-control" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email" class="col-sm-2 control-label">Votre email</label>
-              <div class="col-sm-10">
-                <input type="text" name="email" id="email" class="form-control" type="email" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="response" class="col-sm-2 control-label">Votre r&eacute;ponse</label>
-              <div class="col-sm-10">
-                <textarea id="response" class="form-control" rows="6" required></textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" id="submitForm" class="btn btn-primary"> Envoyer ma r&eacute;ponse </button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-3"></div>
-      </div>
-    </section>
-
-    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="js/validator.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/wdg.js"></script>
+    <div>
+      <p>
+        Rendez-vous le 11 mai...
+      </p>
+    </div>
   </body>
 </html>
