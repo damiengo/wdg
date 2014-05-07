@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Le grand jour...</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/wdg.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -45,6 +46,8 @@
         </nav>
       </div>
     </header>
+
+    <span class="glyphicon glyphicon-chevron-up" id="scrollTop">&nbsp;</span>
 
     <section class="block" id="index">
       <h1 id="accueil" class="wow bounceInLeft">Pam&eacute;la & Damien</h1>
@@ -163,7 +166,10 @@
                 <button type="submit" id="submitForm" class="btn btn-primary"> Envoyer ma r&eacute;ponse </button>
               </div>
               <div class="col-sm-offset-2 col-sm-10">
-                <div class="alert alert-success" id="responseConfirm"></div>
+                <div class="alert alert-success" id="responseConfirm">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong></strong>
+                </div>
               </div>
             </div>
           </form>

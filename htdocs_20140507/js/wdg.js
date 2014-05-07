@@ -28,12 +28,13 @@ $("#submitForm").click(function() {
               "message": $("#response").val()
            }, 
            function(response) {
-               console.log(response);
-               if(response.success) {
-
-               }
+              $("#responseConfirm strong").text('Merci pour votre réponse!');
+              $("#responseConfirm").show();
            }
     );
 
     return false;
 });
+
+/* Hiding response confirm */
+$("#responseConfirm").hide();
