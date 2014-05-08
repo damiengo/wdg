@@ -15,12 +15,6 @@ h1 {
   color: #222222;
 }
 
-header {
-  height: 45px;
-  letter-spacing: 0.1em;
-  font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
-}
-
 a {
   color: #2A6496;
 }
@@ -41,12 +35,15 @@ a:hover {
 }
 
 .navbar.transparent.navbar-default {
-   background: rgba(0,0,0,0.4);
+   background: rgba(42, 100, 150, 0.6);
    border: 0px #fff none;
 }
 
-.navbar li {
+.navbar li a {
+  color: #eee;
   text-transform:uppercase;
+  letter-spacing: 0.1em;
+  font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
 }
 
 .heart {
