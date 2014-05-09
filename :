@@ -70,7 +70,6 @@ a:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 50px;
 }
 
 #index {
@@ -107,21 +106,13 @@ a:hover {
 
 
 #temoins {
-  /*
-  background-image: url("../img/sea.jpg");
-  background-position: center 150px;
+  background-image: url("../img/tems.png");
+  background-position: top center;
   background-repeat: no-repeat;
-  */
-  height: 800px;
-  overflow: hidden;
 }
 
 #accueil {
   margin-top: 100px;
-}
-
-#programme {
-  height: 140%;
 }
 
 #programme .icon img {
@@ -129,43 +120,17 @@ a:hover {
   width: 40px;
 }
 
-#programme .prgm-right {
+#programme .icon {
   text-align: right;
-}
-
-#programme .prgm-left .icon {
-  padding-right: 0;
-  text-align: right;
-}
-
-#programme .prgm-right .icon {
-  padding-left: 0;
-  text-align: left;
 }
 
 #programme h2 {
-  margin-top: 12px;
-}
- 
-#programme .prgm-left h2 {
   text-align: left;
+  margin-top: 0;
 }
 
-#programme .prgm-right h2 {
-  text-align: right;
-}
-
-#programme address {
-  font-style: italic;
-}
-
-#programme p, 
-#programme address {
-  font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
-  font-size: 15px;
-}
 #map {
-  height: 500px;
+  height: 300px;
 }
 
 #reponse {
