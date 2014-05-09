@@ -104,6 +104,12 @@ a:hover {
   width: 140px;
 }
 
+
+#temoins {
+  background-image: url("../img/tems.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 #accueil {
   margin-top: 100px;
 }
