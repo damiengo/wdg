@@ -131,6 +131,10 @@ a:hover {
   margin-top: 20px;
 }
 
+#submitForm {
+  margin-top: 15px;
+}
+
 #scrollTop {
   position: fixed;
   top: 5000px;

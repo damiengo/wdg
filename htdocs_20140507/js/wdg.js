@@ -1,4 +1,11 @@
 
+/* Index background images */
+var indexBack = [
+  "img/back1.png", 
+  "img/back_maries.jpg"
+];
+var indexBackCurrent = 0;
+
 /**
  * On loading complete.
  */
@@ -32,6 +39,9 @@ $(document).ready(function() {
         }
       });
     });
+
+    /* Index background change */
+    setInterval("changeIndexBackground()", 6000);
 
     /* Wow initializing */
     new WOW().init();
@@ -81,3 +91,16 @@ $(document).ready(function() {
     }).addTo(map);
 
 });
+
+/**
+ * Changing the index background image.
+ */
+var changeIndexBackground = function() {
+  indexBackCurrent++;
+  if(indexBackCurrent >= indexBack.length) {
+    indexBackCurrent = 0;
+  }
+  $("#index").fadeTo("slow", 0.3, function() {
+    $(this).css("background-image", "url("+indexBack[indexBackCurrent]+")");
+  }).fadeTo("slow", 1);
+}
