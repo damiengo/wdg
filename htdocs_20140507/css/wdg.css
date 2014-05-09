@@ -111,8 +111,6 @@ a:hover {
 #map {
   width: 100%;
   height: 300px;
-  background-image: url("../img/map.png");
-  background-position:bottom center;
 }
 
 #reponse {

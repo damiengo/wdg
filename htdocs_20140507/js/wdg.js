@@ -56,4 +56,28 @@ $(document).ready(function() {
     /* Hiding response confirm */
     $("#responseConfirm").hide();
 
+    /* Map initializing */
+    var map = L.map('map').setView([47.960, -1.900], 13);
+
+    /* Map layer */
+    L.tileLayer('http://{s}.tiles.mapbox.com/v3/damaiengo.i6jjbejc/{z}/{x}/{y}.png', {
+      maxZoom: 18
+    }).addTo(map);
+
+    /* 1st indicator */
+    var circle1 = L.circle([47.966, -1.797], 500, {
+      stroke: false, 
+      color: '#2A6496',
+      fillColor: '#2A6496',
+      fillOpacity: 0.4
+    }).addTo(map);
+
+    /* 2nd indicator */
+    var circle2 = L.circle([47.9505, -1.977], 500, {
+      stroke: false, 
+      color: '#2A6496',
+      fillColor: '#2A6496',
+      fillOpacity: 0.4
+    }).addTo(map);
+
 });
