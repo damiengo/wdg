@@ -100,7 +100,8 @@ var changeIndexBackground = function() {
   if(indexBackCurrent >= indexBack.length) {
     indexBackCurrent = 0;
   }
-  $("#index").fadeTo("slow", 0.3, function() {
+  $("#index").fadeTo("slow", 0.1, function() {
     $(this).css("background-image", "url("+indexBack[indexBackCurrent]+")");
   }).fadeTo("slow", 1);
 }
+
