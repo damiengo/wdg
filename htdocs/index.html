@@ -1,22 +1,332 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Le grand jour arrive...</title>
-    <style>
-
-      p {
-        text-align: center;
-        font-family: Arial;
-        font-style: italic;
-        margin-top: 150px;
-      }
-
-    </style>
+    <title>Le grand jour...</title>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif|Engagement' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/pace.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/wdg.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div>
-      <p>
-        Rendez-vous le 11 mai...
-      </p>
+
+    <div class="container" id="top">
+      <nav class="navbar transparent navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-justified">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li><a href="#temoins">Les t&eacute;moins</a></li>
+              <li><a href="#programme">Programme</a></li>
+              <li>
+                <a href="#top" class="heart">
+                  <i class="fa fa-heart"></i>
+                </a>
+              </li>
+              <li><a href="#reponse">R&eacute;ponse</a></li>
+              <li><a href="#infos">Infos pratiques</a></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     </div>
+
+    <a href="#top" class="glyphicon glyphicon-chevron-up" id="scrollTop" title="Remonter">&nbsp;</a>
+
+    <section class="block" id="index">
+      <div class="row">
+        <div class="col-md-5">
+          <h1 id="accueil" class="wow bounceInLeft">Pam&eacute;la & Damien</h1>
+          <p class="wow bounceInRight indexDetail">se marient</p>
+          <p class="indexDetail separator wow bounceInLeft">
+            <span></span>
+            <i class="fa fa-heart"></i>
+            <span></span>
+          </p>
+          <p class="wow bounceInRight indexDetail">le 20 septembre 2014</p>
+        </div>
+        <div class="col-md-7"></div>
+      </div>
+    </section>
+
+    <section class="block" id="temoins">
+      <div class="heading">
+        <h1>Les t&eacute;moins</h1>
+        <span></span>
+        <i class="fa fa-heart"></i>
+        <span></span>
+      </div>
+      <div class="row line">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2 text-right wow bounceInLeft">
+          <h1 class="text-right">Sabrina</h1>
+          <p>
+            Soeur de la mariée
+          </p>
+        </div>
+        <div class="col-md-2 wow bounceInLeft">
+          <img src="img/saby.png" class="img-responsive img-circle" />
+        </div>
+        <div class="col-md-2 wow bounceInRight">
+          <img src="img/didy.png" class="img-responsive img-circle" />
+        </div>
+        <div class="col-md-2 text-left wow bounceInRight">
+          <h1 class="text-left">Adrien</h1>
+          <p>
+            Frère du marié
+          </p>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+      <div class="row line">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2 text-right wow bounceInLeft">
+          <h1 class="text-right">Pierre-Yves</h1>
+          <p>
+            Frère de la mariée
+          </p>
+        </div>
+        <div class="col-md-2 wow bounceInLeft">
+          <img src="img/py.png" class="img-responsive img-circle" />
+        </div>
+        <div class="col-md-2 wow bounceInRight">
+          <img src="img/romy.png" class="img-responsive img-circle" />
+        </div>
+        <div class="col-md-2 text-left wow bounceInRight">
+          <h1 class="text-left">Romain</h1>
+          <p>
+            Frère du marié
+          </p>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </section>
+
+    <section class="block" id="programme">
+      <div class="heading">
+        <h1>Programme</h1>
+        <span></span>
+        <i class="fa fa-heart"></i>
+        <span></span>
+      </div>
+      <!-- Mairie -->
+      <div class="row prgm-left wow fadeInLeft">
+        <div class="col-md-2"></div>
+        <div class="col-md-1 icon">
+          <img src="img/icon_prog/mairie.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h2>C&eacute;r&eacute;monie civile</h2>
+          <p>
+            Commençons la journée par le &ldquo;oui&rdquo; devant monsieur le Maire à <strong>9h15</strong> à la mairie de Guichen.
+            <address>
+              Place Georges le Cornec - 
+              35580 Guichen
+            </address>
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <!-- Eglise -->
+      <div class="row prgm-right wow fadeInRight">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h2>C&eacute;r&eacute;monie religieuse</h2>
+          <p>
+            Descendons tranquillement vers l'église où nous prononcerons le &ldquo;oui&rdquo; devant monsieur le Curé à <strong>10h00</strong>.
+          </p>
+        </div>
+        <div class="col-md-1 icon">
+          <img src="img/icon_prog/eglise.jpg" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <!-- Vin d'honneur -->
+      <div class="row prgm-left wow fadeInLeft">
+        <div class="col-md-2"></div>
+        <div class="col-md-1 icon">
+          <img src="img/icon_prog/VH.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h2>Vin d'honneur</h2>
+          <p>
+            Trinquons tous ensemble en l'honneur des nouveaux mariés et de leurs invités.
+            <address>
+              Le bourg - 
+              35330 Bovel
+            </address>
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <!-- Repas -->
+      <div class="row prgm-right wow fadeInRight">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h2>Repas</h2>
+          <p>
+            Il est temps de profiter du déjeuner préparé par notre traiteur.
+          </p>
+        </div>
+        <div class="col-md-1 icon">
+          <img src="img/icon_prog/repas.jpg" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <!-- Photo -->
+      <div class="row prgm-left wow fadeInLeft">
+        <div class="col-md-2"></div>
+        <div class="col-md-1 icon">
+          <img src="img/icon_prog/photo.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h2>Pause photos</h2>
+          <p>
+            Souriez, vous êtes photographiés! Petit moment de détente devant l'appareil de David.
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <!-- Cocktail -->
+      <div class="row prgm-right wow fadeInRight">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h2>Cocktail dinatoire</h2>
+          <p>
+            Faites le plein de douceurs, soyez gourmands et régalez-vous!
+          </p>
+        </div>
+        <div class="col-md-1 icon">
+          <img src="img/icon_prog/cocktail.jpg" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <!-- Danse -->
+      <div class="row prgm-left wow fadeInLeft">
+        <div class="col-md-2"></div>
+        <div class="col-md-1 icon">
+          <img src="img/icon_prog/bal.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h2>Soirée dansante</h2>
+          <p>
+            Déhanchez-vous sur la piste de danse, Benoit compte bien vous faire danser jusqu'au bout de la nuit.
+          </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </section>
+
+    <section id="reponse" class="block container wow fadeInLeft">
+      <div class="heading">
+        <h1>R&eacute;ponse</h1>
+        <span></span>
+        <i class="fa fa-heart"></i>
+        <span></span>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div>
+            <p>
+              Vous pouvez nous rendre r&eacute;ponse avant le 20 juillet par t&eacute;l&eacute;phone au <strong>06 64 72 55 08</strong> ou au <strong>06 98 80 55 41</strong>.
+            </p>
+            <p>
+              Vous pouvez &eacute;galement remplir le formulaire suivant pour nous r&eacute;pondre directement.
+            </p>
+          </div>
+          <form action="" method="post" class="form-horizontal" role="form" id="responseForm" data-toggle="validator">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="name" class="control-label">Nom</label>
+                <div>
+                  <input type="text" name="name" id="name" class="form-control" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="control-label">Email</label>
+                <div>
+                  <input type="text" name="email" id="email" class="form-control" type="email" required />
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="response" class="control-label">R&eacute;ponse</label>
+              <div>
+                <textarea id="response" class="form-control" rows="6" required></textarea>
+              </div>
+            </div>
+            <div>
+              <div>
+                <button type="submit" id="submitForm" class="btn btn-primary"> Envoyer ma r&eacute;ponse </button>
+              </div>
+              <div>
+                <div class="alert alert-success" id="responseConfirm">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong></strong>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </section>
+
+    <section class="block" id="infos">
+      <div class="heading">
+        <h1 id="les_temoins">Informations pratiques</h1>
+        <span></span>
+        <i class="fa fa-heart"></i>
+        <span></span>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h2>Bovel</h2>
+            <p>
+                Il y a la possibilit&eacute; de dormir sur place, une dizaine de lits sont disponibles &agrave; proximit&eacute; de la salle polyvalente.
+            </p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="map">
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wdg.js"></script>
   </body>
 </html>

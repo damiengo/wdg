@@ -2,6 +2,8 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
+  font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,10 +45,10 @@ a:hover {
   color: #eee;
   text-transform:uppercase;
   letter-spacing: 0.1em;
-  font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
 }
 
-.heart {
+.navbar li a.heart {
   font-size: 25px;
 }
 
@@ -94,7 +96,6 @@ a:hover {
   text-transform: uppercase;
   color: #eee;
   text-align: center;
-  font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
 }
 
 #index .separator span {
@@ -105,32 +106,14 @@ a:hover {
   width: 140px;
 }
 
-
-#temoins {
-  background-color: #2a6496;
-  height: 800px;
-  overflow: hidden;
+#temoins .line {
+  margin-top: 40px;
 }
 
-#temoins h1 {
-  color: #eee;
-}
-
-#temoins .heading span {
-  border-top: 1px solid #eee;
-}
-
-#temoins .heading i {
-  color: #eee;
-}
-
-#temoins .names {
-  color: #eee;
-  text-align: center;
-  font-size: 35px;
-  font-family: 'Engagement', cursive;
-  position: absolute;
-  top: 550px;
+#temoins .line p {
+  color: #2a6496;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 #accueil {
@@ -181,23 +164,8 @@ a:hover {
   font-style: italic;
 }
 
-#programme p, 
-#programme address {
-  font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
-  font-size: 15px;
-}
 #map {
   height: 500px;
-}
-
-#reponse {
-  /*background-image: url("../img/response.jpg");
-  background-position:center center;
-  background-repeat: no-repeat;*/
-  /*-webkit-background-size: cover;*/ /* pour Chrome et Safari */
-  /*-moz-background-size: cover;*/ /* pour Firefox */
-  /*-o-background-size: cover;*/ /* pour Opera */
-  /*background-size: cover;*/ /* version standardisée */
 }
 
 #reponse .heading {
@@ -218,3 +186,4 @@ a:hover {
   right: 50px;
   z-index: 100000;
 }
+
