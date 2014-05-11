@@ -107,11 +107,6 @@ a:hover {
 
 
 #temoins {
-  /*
-  background-image: url("../img/sea.jpg");
-  background-position: center 150px;
-  background-repeat: no-repeat;
-  */
   background-color: #2a6496;
   height: 800px;
   overflow: hidden;
@@ -134,12 +129,12 @@ a:hover {
 }
 
 #programme {
-  height: 140%;
+  height: 150%;
 }
 
-#programme .icon img {
-  height: 40px;
-  width: 40px;
+#programme .prgm-left,
+#programme .prgm-right {
+  margin-top: 15px;
 }
 
 #programme .prgm-right {
@@ -158,8 +153,13 @@ a:hover {
 
 #programme h2 {
   margin-top: 12px;
+  color: #2a6496;
 }
  
+#programme strong {
+  color: #2a6496;
+}
+
 #programme .prgm-left h2 {
   text-align: left;
 }
