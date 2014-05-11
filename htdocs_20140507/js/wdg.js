@@ -1,8 +1,10 @@
 
 /* Index background images */
 var indexBack = [
-  "img/back1.png", 
-  "img/back2.png"
+  "img/back1.jpg", 
+  "img/back2.png",
+  "img/back5.jpg",
+  "img/back6.jpg"
 ];
 var indexBackCurrent = 0;
 

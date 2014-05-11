@@ -74,7 +74,7 @@ a:hover {
 }
 
 #index {
-  background-image: url("../img/back1.png");
+  background-image: url("../img/back1.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   -webkit-background-size: cover; /* pour Chrome et Safari */
@@ -112,8 +112,21 @@ a:hover {
   background-position: center 150px;
   background-repeat: no-repeat;
   */
+  background-color: #2a6496;
   height: 800px;
   overflow: hidden;
+}
+
+#temoins h1 {
+  color: #eee;
+}
+
+#temoins .heading span {
+  border-top: 1px solid #eee;
+}
+
+#temoins .heading i {
+  color: #eee;
 }
 
 #accueil {
