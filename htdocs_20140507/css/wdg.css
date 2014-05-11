@@ -124,6 +124,15 @@ a:hover {
   color: #eee;
 }
 
+#temoins .names {
+  color: #eee;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Engagement', cursive;
+  position: absolute;
+  top: 550px;
+}
+
 #accueil {
   margin-top: 100px;
 }
