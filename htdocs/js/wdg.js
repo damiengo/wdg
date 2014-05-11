@@ -107,3 +107,11 @@ var changeIndexBackground = function() {
   }).fadeTo("slow", 1);
 }
 
+/* Preload images */
+var preload = function(arrayOfImages) {
+  $(arrayOfImages).each(function(){
+    (new Image()).src = this;
+  });
+}
+preload(indexBack);
+
