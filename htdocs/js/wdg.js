@@ -59,6 +59,9 @@ $(document).ready(function() {
                function(response) {
                   $("#responseConfirm strong").text('Merci pour votre réponse!');
                   $("#responseConfirm").show();
+                  $("#name").val("");
+                  $("#email").val("");
+                  $("#response").val("");
                }
         );
 
