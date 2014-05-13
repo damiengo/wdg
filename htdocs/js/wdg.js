@@ -45,8 +45,21 @@ $(document).ready(function() {
     /* Index background change */
     setInterval("changeIndexBackground()", 6000);
 
-    /* Wow initializing */
-    new WOW().init();
+    /* Scroll reveal */
+    if ($(window).width() > 767) {
+      var config = {
+        after: '0s',
+        enter: 'top',
+        move: '50px',
+        over: '0.66s',
+        easing: 'ease-in-out',
+        viewportFactor: 0.33,
+        reset: false,
+        init: true
+      };
+
+      window.scrollReveal = new scrollReveal();
+    }
 
     /* Sending response */
     $("#submitForm").click(function() {

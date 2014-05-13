@@ -15,7 +15,7 @@
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -65,72 +65,74 @@
     <section class="block" id="index">
       <div class="row">
         <div class="col-md-5">
-          <h1 id="accueil" class="wow bounceInLeft">Pam&eacute;la & Damien</h1>
-          <p class="wow bounceInRight indexDetail">se marient</p>
-          <p class="indexDetail separator wow bounceInLeft">
+          <h1 id="accueil" data-scroll-reveal="enter from the left">Pam&eacute;la & Damien</h1>
+          <p class="indexDetail" data-scroll-reveal="enter from the right">se marient</p>
+          <p class="indexDetail separator" data-scroll-reveal="enter from the left">
             <span></span>
             <i class="fa fa-heart"></i>
             <span></span>
           </p>
-          <p class="wow bounceInRight indexDetail">le 20 septembre 2014</p>
+          <p class="indexDetail" data-scroll-reveal="enter from the right">le 20 septembre 2014</p>
         </div>
         <div class="col-md-7"></div>
       </div>
     </section>
 
     <section class="block" id="temoins">
-      <div class="heading">
-        <h1>Les t&eacute;moins</h1>
-        <span></span>
-        <i class="fa fa-heart"></i>
-        <span></span>
+      <div class="row">
+        <div class="col-sm-12 heading">
+          <h1>Les t&eacute;moins</h1>
+          <span></span>
+          <i class="fa fa-heart"></i>
+          <span></span>
+        </div>
       </div>
       <div class="row line">
-        <div class="col-md-2">
+        <div class="col-sm-2">
         </div>
-        <div class="col-md-2 text-right wow bounceInLeft">
+        <div class="col-sm-2 text-right" data-scroll-reveal="enter from the left">
           <h1 class="text-right">Sabrina</h1>
           <p>
             Soeur de la mariée
           </p>
         </div>
-        <div class="col-md-2 wow bounceInLeft">
+        <div class="col-sm-2" data-scroll-reveal="enter from the left">
           <img src="img/saby.png" class="img-responsive img-circle" />
         </div>
-        <div class="col-md-2 wow bounceInRight">
+        <div class="col-sm-2" data-scroll-reveal="enter from the right">
           <img src="img/didy.png" class="img-responsive img-circle" />
         </div>
-        <div class="col-md-2 text-left wow bounceInRight">
+        <div class="col-sm-2 text-left" data-scroll-reveal="enter from the right">
           <h1 class="text-left">Adrien</h1>
           <p>
             Frère du marié
           </p>
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-2">
         </div>
       </div>
       <div class="row line">
-        <div class="col-md-2">
+        <div class="col-sm-2">
         </div>
-        <div class="col-md-2 text-right wow bounceInLeft">
+        <div class="col-sm-2 text-right" data-scroll-reveal="enter from the left">
           <h1 class="text-right">Pierre-Yves</h1>
           <p>
             Frère de la mariée
           </p>
         </div>
-        <div class="col-md-2 wow bounceInLeft">
+        <div class="col-sm-2" data-scroll-reveal="enter from the left">
           <img src="img/py.png" class="img-responsive img-circle" />
         </div>
-        <div class="col-md-2 wow bounceInRight">
+        <div class="col-sm-2" data-scroll-reveal="enter from the right">
           <img src="img/romy.png" class="img-responsive img-circle" />
         </div>
-        <div class="col-md-2 text-left wow bounceInRight">
+        <div class="col-sm-2 text-left" data-scroll-reveal="enter from the right">
           <h1 class="text-left">Romain</h1>
           <p>
             Frère du marié
           </p>
         </div>
-        <div class="col-md-2">
+        <div class="col-sm-2">
         </div>
     </section>
 
@@ -142,12 +144,12 @@
         <span></span>
       </div>
       <!-- Mairie -->
-      <div class="row prgm-left wow fadeInLeft">
+      <div class="row prgm-left">
         <div class="col-md-2"></div>
         <div class="col-md-1 icon">
           <img src="img/icon_prog/mairie.jpg" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-scroll-reveal="enter from the left">
           <h2>C&eacute;r&eacute;monie civile</h2>
           <p>
             Commençons la journée par le &ldquo;oui&rdquo; devant monsieur le Maire à <strong>9h15</strong> à la mairie de Guichen.
@@ -160,9 +162,9 @@
         <div class="col-md-3"></div>
       </div>
       <!-- Eglise -->
-      <div class="row prgm-right wow fadeInRight">
+      <div class="row prgm-right">
         <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-scroll-reveal="enter from the right">
           <h2>C&eacute;r&eacute;monie religieuse</h2>
           <p>
             Descendons tranquillement vers l'église où nous prononcerons le &ldquo;oui&rdquo; devant monsieur le Curé à <strong>10h00</strong>.
@@ -174,12 +176,12 @@
         <div class="col-md-2"></div>
       </div>
       <!-- Vin d'honneur -->
-      <div class="row prgm-left wow fadeInLeft">
+      <div class="row prgm-left">
         <div class="col-md-2"></div>
         <div class="col-md-1 icon">
           <img src="img/icon_prog/VH.jpg" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-scroll-reveal="enter from the left">
           <h2>Vin d'honneur</h2>
           <p>
             Trinquons tous ensemble en l'honneur des nouveaux mariés et de leurs invités.
@@ -192,9 +194,9 @@
         <div class="col-md-3"></div>
       </div>
       <!-- Repas -->
-      <div class="row prgm-right wow fadeInRight">
+      <div class="row prgm-right">
         <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-scroll-reveal="enter from the right">
           <h2>Repas</h2>
           <p>
             Il est temps de profiter du déjeuner préparé par notre traiteur.
@@ -206,12 +208,12 @@
         <div class="col-md-2"></div>
       </div>
       <!-- Photo -->
-      <div class="row prgm-left wow fadeInLeft">
+      <div class="row prgm-left">
         <div class="col-md-2"></div>
         <div class="col-md-1 icon">
           <img src="img/icon_prog/photo.jpg" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-scroll-reveal="enter from the left">
           <h2>Pause photos</h2>
           <p>
             Souriez, vous êtes photographiés! Petit moment de détente devant l'appareil de David.
@@ -220,9 +222,9 @@
         <div class="col-md-3"></div>
       </div>
       <!-- Cocktail -->
-      <div class="row prgm-right wow fadeInRight">
+      <div class="row prgm-right">
         <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-scroll-reveal="enter from the right">
           <h2>Cocktail dinatoire</h2>
           <p>
             Faites le plein de douceurs, soyez gourmands et régalez-vous!
@@ -234,12 +236,12 @@
         <div class="col-md-2"></div>
       </div>
       <!-- Danse -->
-      <div class="row prgm-left wow fadeInLeft">
+      <div class="row prgm-left">
         <div class="col-md-2"></div>
         <div class="col-md-1 icon">
           <img src="img/icon_prog/bal.jpg" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-scroll-reveal="enter from the left">
           <h2>Soirée dansante</h2>
           <p>
             Déhanchez-vous sur la piste de danse, Benoit compte bien vous faire danser jusqu'au bout de la nuit.
@@ -249,7 +251,7 @@
       </div>
     </section>
 
-    <section id="reponse" class="block container wow fadeInLeft">
+    <section id="reponse" class="block container">
       <div class="heading">
         <h1>R&eacute;ponse</h1>
         <span></span>
@@ -328,12 +330,12 @@
       </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/leaflet.js"></script>
     <script src="js/pace.min.js"></script>
     <script src="js/validator.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="js/scrollReveal.min.js"></script>
     <script src="js/wdg.js"></script>
   </body>
 </html>
