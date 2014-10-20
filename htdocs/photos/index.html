@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://fonts.googleapis.com/css?family=PT+Serif|Engagement' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,6 +46,18 @@
         </div>
         <div class="col-md-3"></div>
       </div>
+
+      <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+      <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+      </div>
+
     </section>
 
     <script src="../js/jquery-1.11.1.min.js"></script>
@@ -53,8 +66,8 @@
 
     <script type="text/javascript">
       var gallery = blueimp.Gallery([
-        'https://example.org/images/banana.jpg',
-        'https://example.org/images/orange.jpg'
+        'assets/img/mairie/medium/DSC_9052.jpg',
+        'assets/img/mairie/medium/DSC_9059.jpg',
       ]);
     </script>
 

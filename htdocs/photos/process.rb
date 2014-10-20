@@ -26,6 +26,8 @@ class ImageProcess
     end
     Dir.mkdir(gen_path + @medium_dir)
 
+    out_file = File.new("assets/json/"+name+".json", "w")
+    out_file.puts("[")
     Dir[gen_path + @original_dir + '*'].each do |img|
       puts img
       name = File.basename(img)
@@ -33,7 +35,9 @@ class ImageProcess
       image.resize "800"
       image.format "jpg"
       image.write gen_path + @medium_dir + name
+      out_file.puts(gen_path + @original_dir + name + ",")
     end
+    out_file.puts("]")
   end
 
 end
