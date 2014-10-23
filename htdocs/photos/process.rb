@@ -35,7 +35,7 @@ class ImageProcess
       image.resize "800"
       image.format "jpg"
       image.write gen_path + @medium_dir + name
-      out_file.puts(gen_path + @original_dir + name + ",")
+      out_file.puts("\"" + gen_path + @original_dir + name + "\",")
     end
     out_file.puts("]")
   end
