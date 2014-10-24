@@ -30,12 +30,12 @@ class ImageProcess
     out_file.puts("[")
     Dir[gen_path + @original_dir + '*'].each do |img|
       puts img
-      name = File.basename(img)
+      img_name = File.basename(img)
       image = MiniMagick::Image.open(img)
       image.resize "800"
       image.format "jpg"
-      image.write gen_path + @medium_dir + name
-      out_file.puts("\"" + gen_path + @original_dir + name + "\",")
+      image.write gen_path + @medium_dir + img_name
+      out_file.puts("\"" + gen_path + @original_dir + img_name + "\",")
     end
     out_file.puts("]")
   end
