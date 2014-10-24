@@ -28,14 +28,18 @@ class ImageProcess
 
     out_file = File.new("assets/json/"+name+".json", "w")
     out_file.puts("[")
-    Dir[gen_path + @original_dir + '*'].each do |img|
+    files = Dir[gen_path + @original_dir + '*']
+    files.each_with_index do |img, index|
       puts img
       img_name = File.basename(img)
       image = MiniMagick::Image.open(img)
       image.resize "800"
       image.format "jpg"
       image.write gen_path + @medium_dir + img_name
-      out_file.puts("\"" + gen_path + @original_dir + img_name + "\",")
+      out_file.puts("\"" + gen_path + @original_dir + img_name + "\"")
+      if index < files.length-1
+        out_file.puts(",")
+      end
     end
     out_file.puts("]")
   end

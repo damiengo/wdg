@@ -70,16 +70,10 @@
     <script type="text/javascript">
       var assetsPath = 'assets/json/';
       $(document).ready(function() {
-        $('.galleries').on('click', function(e){
-          /*var data = [
-                         'assets/img/mairie/original/DSC_9052.jpg',
-                         'assets/img/mairie/original/DSC_9059.jpg',
-                         'assets/img/mairie/original/DSC_9090.jpg',
-          ];
-          var gallery = blueimp.Gallery(data);*/
-          $.getJSON(assetsPath+'mairie.json', function(data){
-            console.log(data);
-            //var gallery = blueimp.Gallery(data);
+        $('.galleries').on('click', function(e) {
+          var id = $(e.target).attr('id');
+          $.getJSON(assetsPath+id+'.json', function(data) {
+            var gallery = blueimp.Gallery(data);
           });
         });
       });
