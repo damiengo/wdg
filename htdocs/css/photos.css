@@ -1,0 +1,14 @@
+h1, h2, h3, h4 {
+    font-family: 'Engagement', cursive;
+    font-weight: normal;
+    text-align: center;
+    color: #2a6496;
+}
+
+i {
+    color: #2a6496;
+}
+
+.caption {
+    text-align: center;
+}

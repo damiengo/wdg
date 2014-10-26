@@ -49,3 +49,10 @@ end
 # Launching
 imgPrc = ImageProcess.new
 imgPrc.generate_images 'mairie'
+imgPrc.generate_images 'eglise'
+imgPrc.generate_images 'vin_honneur'
+imgPrc.generate_images 'repas'
+imgPrc.generate_images 'photos'
+imgPrc.generate_images 'cocktail'
+imgPrc.generate_images 'bal'
+imgPrc.generate_images 'retour'
