@@ -9,6 +9,14 @@ i {
     color: #2a6496;
 }
 
+#connection {
+    margin-top: 150px;
+}
+
+#password {
+    text-align: center;
+}
+
 .caption {
     text-align: center;
 }
