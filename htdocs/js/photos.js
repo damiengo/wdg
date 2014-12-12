@@ -28,7 +28,12 @@ var initGalleries = function() {
   $('.galleries').on('click', function(e) {
     var id = $(e.target).attr('id');
     $.getJSON(assetsPath+id+'.json', function(data) {
-      var gallery = blueimp.Gallery(data);
+      var gallery = blueimp.Gallery(
+          data, 
+          {
+              startSlideshow: true,
+              slideshowInterval: 3000
+          });
     });
   });
 };

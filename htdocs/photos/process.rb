@@ -13,6 +13,7 @@ class ImageProcess
     @img_path     = 'assets/img/'
     @original_dir = 'original/'
     @medium_dir   = 'medium/'
+    @timestamp    = Time.now.to_i.to_s
   end
 
   #
@@ -31,12 +32,13 @@ class ImageProcess
     files = Dir[gen_path + @original_dir + '*']
     files.each_with_index do |img, index|
       puts img
-      img_name = File.basename(img)
+      img_name = name + index.to_s.rjust(3, '0') + "_" + @timestamp + ".jpg"
       image = MiniMagick::Image.open(img)
-      image.resize "800"
+      image.resize "1000"
       image.format "jpg"
       image.write gen_path + @medium_dir + img_name
-      out_file.puts("\"" + gen_path + @original_dir + img_name + "\"")
+      out_file.puts("\"" + gen_path + @medium_dir + img_name + "\"")
+      File.rename(img, gen_path + @original_dir + img_name)
       if index < files.length-1
         out_file.puts(",")
       end
@@ -52,6 +54,7 @@ imgPrc.generate_images 'mairie'
 imgPrc.generate_images 'eglise'
 imgPrc.generate_images 'vin_honneur'
 imgPrc.generate_images 'repas'
+imgPrc.generate_images 'studio'
 imgPrc.generate_images 'photos'
 imgPrc.generate_images 'cocktail'
 imgPrc.generate_images 'bal'
