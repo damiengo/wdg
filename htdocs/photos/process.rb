@@ -29,10 +29,10 @@ class ImageProcess
 
     out_file = File.new("assets/json/"+name+".json", "w")
     out_file.puts("[")
-    files = Dir[gen_path + @original_dir + '*']
+    files = Dir.glob(gen_path + @original_dir + '*').sort
     files.each_with_index do |img, index|
       puts img
-      img_name = name + index.to_s.rjust(3, '0') + "_" + @timestamp + ".jpg"
+      img_name = @timestamp + "_" + name + index.to_s.rjust(3, '0') + ".jpg"
       image = MiniMagick::Image.open(img)
       image.resize "1000"
       image.format "jpg"
@@ -50,12 +50,14 @@ end
 
 # Launching
 imgPrc = ImageProcess.new
-imgPrc.generate_images 'mairie'
+#imgPrc.generate_images 'mairie'
 imgPrc.generate_images 'eglise'
-imgPrc.generate_images 'vin_honneur'
-imgPrc.generate_images 'repas'
-imgPrc.generate_images 'studio'
-imgPrc.generate_images 'photos'
-imgPrc.generate_images 'cocktail'
-imgPrc.generate_images 'bal'
-imgPrc.generate_images 'retour'
+#imgPrc.generate_images 'vin_honneur'
+#imgPrc.generate_images 'repas'
+#imgPrc.generate_images 'studio'
+#imgPrc.generate_images 'photos'
+#imgPrc.generate_images 'cocktail'
+#imgPrc.generate_images 'bal'
+#imgPrc.generate_images 'retour'
+#imgPrc.generate_images 'maries'
+#imgPrc.generate_images 'fun'
