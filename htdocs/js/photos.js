@@ -31,8 +31,8 @@ var initGalleries = function() {
       var gallery = blueimp.Gallery(
           data, 
           {
-              startSlideshow: true,
-              slideshowInterval: 3000
+              startSlideshow:    true,
+              slideshowInterval: 4000
           });
     });
   });

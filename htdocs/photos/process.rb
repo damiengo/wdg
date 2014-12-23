@@ -51,7 +51,7 @@ end
 # Launching
 imgPrc = ImageProcess.new
 #imgPrc.generate_images 'mairie'
-imgPrc.generate_images 'eglise'
+#imgPrc.generate_images 'eglise'
 #imgPrc.generate_images 'vin_honneur'
 #imgPrc.generate_images 'repas'
 #imgPrc.generate_images 'studio'
@@ -60,4 +60,4 @@ imgPrc.generate_images 'eglise'
 #imgPrc.generate_images 'bal'
 #imgPrc.generate_images 'retour'
 #imgPrc.generate_images 'maries'
-#imgPrc.generate_images 'fun'
+imgPrc.generate_images 'fun'
